@@ -1,0 +1,16 @@
+{
+  "interval": {
+    "type": "spinbutton",
+    "default": 60,
+    "min": 1,
+    "max": 1440,
+    "step": 1,
+    "units": "Minutes",
+    "description": "Alarm Interval"
+  },
+  "alarm-text": {
+    "type": "entry",
+    "default": "It's time to drink something!",
+    "description": "Alarm Text"
+  }
+}

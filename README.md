@@ -1,2 +1,4 @@
-# any-alarm-cinnamon-applet
-A quick and dirty Linux Mint Cinnamon applet that shows an alarm every x minutes.
+# Any Alarm
+
+Will remind you regularly about ... what ever.
+Interval and texts can be modified in the settings.
