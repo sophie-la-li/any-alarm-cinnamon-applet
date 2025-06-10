@@ -1,12 +1,29 @@
 {
-  "interval": {
+  "enabled": {
+    "type": "switch",
+    "default": true,
+    "description": "Alarm enabled"
+  },
+  "mode": {
+    "type": "combobox",
+    "default": "fh",
+    "description": "When to trigger the alarm",
+    "options": {
+      "every # seconds (see option below)": "xs",
+      "every full minute": "fm",
+      "every quarter hour": "qh",
+      "every half hour": "hh",
+      "every full hour": "fh"
+    }
+  },
+  "xs-mode-seconds": {
     "type": "spinbutton",
-    "default": 60,
+    "default": 5,
     "min": 1,
-    "max": 1440,
+    "max": 86400,
     "step": 1,
-    "units": "Minutes",
-    "description": "Alarm Interval"
+    "units": "seconds",
+    "description": "Seconds for the \"every # seconds\" mode"
   },
   "alarm-text": {
     "type": "entry",
@@ -14,3 +31,4 @@
     "description": "Alarm Text"
   }
 }
+
